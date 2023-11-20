@@ -2,6 +2,9 @@
 title: Cemerson77's Homepage
 description: Bookmark this to keep an eye on my project updates!
 
+# Jekyll settings
+theme: iPortfolio
+
 # URL settings
 url: https://cemerson77.github.io/
 baseurl: ""
