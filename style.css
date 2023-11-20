@@ -19,8 +19,8 @@ body {
 .profile-photo {
   width: 150px;
   border-radius: 50%;
-  margin: 20px auto; /* Center the image and add margin */
-  display: block; /* Ensure it's a block-level element for centering */
+  margin: 20px auto; 
+  display: block; 
 }
 
 .about {
