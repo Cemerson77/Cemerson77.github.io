@@ -7,20 +7,25 @@ body {
 .container {
   max-width: 800px;
   margin: 0 auto;
+  display: block;
   padding: 20px;
 }
 
 .page-header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .profile-photo {
-  width: 150px;
+  width: 50px;
   border-radius: 50%;
+  margin: 20px auto; 
+  display: block; 
 }
 
 .about {
   margin-top: 30px;
+  text-align: center;
 }
 
 .projects {
