@@ -61,50 +61,50 @@ title: Christine Emerson - Portfolio
       <div class="project algorithm-data-structures">
         <h3>Algorithm and Data Structures</h3>
         <p><b>Artifact Description</b></p>	
-	The artifact chosen for this artifact is FitTrack. FitTrack was developed as an extensive Android weight-tracking application written in Java and XML in Android Studio, meticulously developed throughout the CS 360 Mobile Architect & Programming course, which concluded in the previous term. Its creation was driven by providing users with a smooth platform for monitoring weight, setting goals, and overseeing their fitness progress. The artifact in question is associated with enhancement two, algorithms and data structure optimizing the data sorting algorithm within the FitTrack Android app. Initially employing a basic sorting algorithm, I enhanced its efficiency by implementing the Quick Sort algorithm. This improvement aimed to improve the app's overall performance in handling and presenting sorted data.
-	Justify the Inclusion of the Artifact in your ePortfolio
-	Incorporating the FitTrack artifact into my ePortfolio is a strategic choice aligned with my ambition to excel as a software engineer. It symbolizes my commitment to mastering fundamental algorithms and data structures crucial for robust software development. By implementing the Quick Sort algorithm, FitTrack is a tangible representation of my ability to translate complex algorithmic principles into practical solutions. The artifact demonstrates technical prowess and underscores my dedication to effective communication through expanded comments and improved documentation. It is a reflective piece showcasing the challenges faced during implementation and the iterative refinement process. Furthermore, its direct alignment with course outcomes, encompassing algorithmic principles, computing techniques, and professional communication, solidifies its place as a comprehensive representation of my evolving capabilities in software engineering.
-	How was the Artifact Improved? 
-	The improvement of the FitTrack artifact involved a fundamental transformation of the data sorting algorithm, shifting from a basic sorting method to the implementation of the Quick Sort algorithm for presenting the weight entry in the form of a list and graph sorted. This strategic modification significantly elevated the app's efficiency in handling and presenting sorted data. Beyond algorithmic enhancement, a conscientious effort was made to bolster documentation by expanding comments and modularizing the code, prioritizing improved readability. This multifaceted approach showcased technical proficiency in algorithm design and reflected a commitment to effective communication within the codebase. By meticulously addressing algorithmic efficiency and code clarity, the artifact stands as a testament to my evolving capabilities in software engineering, fulfilling course objectives related to algorithmic principles, computing techniques, and professional communication.
-	Did You Meet the Course Objectives in Module One? 
-	The introduction of the Quick Sort algorithm fulfills the goal of addressing algorithmic efficiency, and the added emphasis on documentation code modularization aligns with the overall objective of enhancing computing practices. The enhancements in this module align with the course objectives in module one as follows:
-		•	Design and Evaluate Computing Solutions that Use Algorithmic Principles:  Quick Sort is an algorithm for sorting data, and its implementation requires a deep understanding of algorithmic principles, involving designing the sorting solution and evaluating its efficiency.
-		•	Demonstrate an Ability to Use Techniques, Skills, and Tools in Computing Practices: Implementing Quick Sort involves applying various programming techniques, utilizing skills in algorithm design, and using programming tools effectively. Understanding the details of the algorithm and employing programming skills to translate the algorithm into a functional program is necessary.
-		•	Design, Develop, and Deliver Professional-Quality Oral, Written, and Visual Communications: While not explicitly used in the Quick Sort implementation, effective communication is crucial in a collaborative coding environment, including writing clear and concise comments in the code and creating documentation.
-	How the Quick Sort Algorithm Was Implemented 
-	In the WeightEntryDatabaseHelper class, the Quick Sort algorithm was implemented to optimize data sorting within the FitTrack Android app. Below is a detailed breakdown of how the Quick Sort algorithm was integrated into the existing codebase:
-		1.	Before Sorting:
-			•	The original list of weight entries was logged using Log.d("SortDebug", "Before sorting: " + weightEntries).
-		2.	Quick Sort Invocation:
-			•	The Quick Sort algorithm was invoked using the nested class WeightEntrySorter.quickSort(weightEntries).
-		3.	After Sorting:
-			•	The sorted list of weight entries was logged post-Quick Sort for verification using Log.d("SortDebug", "After sorting: " + weightEntries);.
-	Implementation of the Quick Sort Algorithm
-	The Quick Sort algorithm was encapsulated within the nested class WeightEntrySorter to ensure modularity and maintainability. Key components of the Quick Sort algorithm include:
-		•	quickSort Method:
-			o	Recursively divides and conquers the list of weight entries.
-			o	Utilizes the partition method for selecting a pivot and rearranging elements.
-		•	partition Method:
-			o	Determines the pivot element and partitions the list accordingly.
-			o	Employs a swap mechanism to rearrange elements around the pivot.
-		•	swap Method:
-			o	Facilitates the swapping of elements in the list.
-		•	compareDates Method:
-			o	Enables the comparison of dates for sorting weight entries in ascending order.
-	Documentation Enhancement:
-		•	Approach:
-			o	Expanded comments and improved code documentation.
-		•	Objective:
-			o	The aim was to provide comprehensive and clear explanations within the codebase to facilitate understanding for current and future developers.
-		•	Importance:
-			o	Enhanced documentation improves code readability, maintenance, and collaboration among developers.
-	Code Modularization:
-		•	Approach:
-			o	Broke down the code into smaller, more focused methods or classes.
-		•	Objective:
-			o	The goal was to enhance code readability and maintainability by organizing it into logical, manageable components.
-		•	Importance:
-			o	Code modularization simplifies troubleshooting, debugging, and future enhancements, adhering to best practices for efficient software development.
+	<p>The artifact chosen for this artifact is FitTrack. FitTrack was developed as an extensive Android weight-tracking application written in Java and XML in Android Studio, meticulously developed throughout the CS 360 Mobile Architect & Programming course, which concluded in the previous term. Its creation was driven by providing users with a smooth platform for monitoring weight, setting goals, and overseeing their fitness progress. The artifact in question is associated with enhancement two, algorithms and data structure optimizing the data sorting algorithm within the FitTrack Android app. Initially employing a basic sorting algorithm, I enhanced its efficiency by implementing the Quick Sort algorithm. This improvement aimed to improve the app's overall performance in handling and presenting sorted data.</p>
+	<p><b>Justify the Inclusion of the Artifact in your ePortfolio</b>b</p>
+	<p>Incorporating the FitTrack artifact into my ePortfolio is a strategic choice aligned with my ambition to excel as a software engineer. It symbolizes my commitment to mastering fundamental algorithms and data structures crucial for robust software development. By implementing the Quick Sort algorithm, FitTrack is a tangible representation of my ability to translate complex algorithmic principles into practical solutions. The artifact demonstrates technical prowess and underscores my dedication to effective communication through expanded comments and improved documentation. It is a reflective piece showcasing the challenges faced during implementation and the iterative refinement process. Furthermore, its direct alignment with course outcomes, encompassing algorithmic principles, computing techniques, and professional communication, solidifies its place as a comprehensive representation of my evolving capabilities in software engineering.</p>
+	<p><b>How was the Artifact Improved?</b></p>
+	<p>The improvement of the FitTrack artifact involved a fundamental transformation of the data sorting algorithm, shifting from a basic sorting method to the implementation of the Quick Sort algorithm for presenting the weight entry in the form of a list and graph sorted. This strategic modification significantly elevated the app's efficiency in handling and presenting sorted data. Beyond algorithmic enhancement, a conscientious effort was made to bolster documentation by expanding comments and modularizing the code, prioritizing improved readability. This multifaceted approach showcased technical proficiency in algorithm design and reflected a commitment to effective communication within the codebase. By meticulously addressing algorithmic efficiency and code clarity, the artifact stands as a testament to my evolving capabilities in software engineering, fulfilling course objectives related to algorithmic principles, computing techniques, and professional communication.</p>
+	<p><b>Did You Meet the Course Objectives in Module One?</b></p>
+	<p>The introduction of the Quick Sort algorithm fulfills the goal of addressing algorithmic efficiency, and the added emphasis on documentation code modularization aligns with the overall objective of enhancing computing practices. The enhancements in this module align with the course objectives in module one as follows:</p>
+		<p>•	Design and Evaluate Computing Solutions that Use Algorithmic Principles:  Quick Sort is an algorithm for sorting data, and its implementation requires a deep understanding of algorithmic principles, involving designing the sorting solution and evaluating its efficiency.</p>
+		<p>•	Demonstrate an Ability to Use Techniques, Skills, and Tools in Computing Practices: Implementing Quick Sort involves applying various programming techniques, utilizing skills in algorithm design, and using programming tools effectively. Understanding the details of the algorithm and employing programming skills to translate the algorithm into a functional program is necessary.</p>
+		<p>•	Design, Develop, and Deliver Professional-Quality Oral, Written, and Visual Communications: While not explicitly used in the Quick Sort implementation, effective communication is crucial in a collaborative coding environment, including writing clear and concise comments in the code and creating documentation.</p>
+	<p><b>How the Quick Sort Algorithm Was Implemented </b></p>
+	<p>In the WeightEntryDatabaseHelper class, the Quick Sort algorithm was implemented to optimize data sorting within the FitTrack Android app. Below is a detailed breakdown of how the Quick Sort algorithm was integrated into the existing codebase:</p>
+		<p><b>1.	Before Sorting:</b></p>
+			<p>•	The original list of weight entries was logged using Log.d("SortDebug", "Before sorting: " + weightEntries).</p>
+		<p><b>2.	Quick Sort Invocation:</b></p>
+			•	The Quick Sort algorithm was invoked using the nested class WeightEntrySorter.quickSort(weightEntries).</p>
+		<p><b>3.	After Sorting:</b></p>
+			•	The sorted list of weight entries was logged post-Quick Sort for verification using Log.d("SortDebug", "After sorting: " + weightEntries);.</p>
+	<p><b>Implementation of the Quick Sort Algorithm</b></p>
+	<p>The Quick Sort algorithm was encapsulated within the nested class WeightEntrySorter to ensure modularity and maintainability. Key components of the Quick Sort algorithm include:</p>
+	<p><b>	•	quickSort Method:</b></p>
+		<p>	o	Recursively divides and conquers the list of weight entries.</p>
+		<p>	o	Utilizes the partition method for selecting a pivot and rearranging elements.</p>
+	<p><b>	•	partition Method:</b></p>
+		<p>	o	Determines the pivot element and partitions the list accordingly.</p>
+		<p>	o	Employs a swap mechanism to rearrange elements around the pivot.</p>
+	<p><b>	•	swap Method:</b></p>
+		<p>	o	Facilitates the swapping of elements in the list.</p>
+	<p><b>	•	compareDates Method:</b></p>
+		<p>	o	Enables the comparison of dates for sorting weight entries in ascending order.</p>
+	<p><b>Documentation Enhancement:</b></p>
+	<p><b>	•	Approach:</b></p>
+	<p>		o	Expanded comments and improved code documentation.</p>
+	<p><b>	•	Objective:</b></p>
+	<p>		o	The aim was to provide comprehensive and clear explanations within the codebase to facilitate understanding for current and future developers.</p>
+	<p><b>	•	Importance:</b></p>
+	<p>		o	Enhanced documentation improves code readability, maintenance, and collaboration among developers.</p>
+	<p><b>Code Modularization:</b></p>
+	<p><b>	•	Approach:</b></p>
+	<p>		o	Broke down the code into smaller, more focused methods or classes.</p>
+	<p><b>	•	Objective:</b></p>
+	<p>		o	The goal was to enhance code readability and maintainability by organizing it into logical, manageable components.</p>
+	<p><b>	•	Importance:</b></p>
+	<p>		o	Code modularization simplifies troubleshooting, debugging, and future enhancements, adhering to best practices for efficient software development.</p>
 	<p><b>Reflecting on the Process of Enhancing the Artifact</b></p>
 	<p>Reflecting on enhancing the FitTrack artifact in the context of algorithms and data structures offered a profound learning experience. Initially, the focus was on analyzing the data sorting mechanism within the FitTrack Android app. Transitioning from a basic sorting algorithm to the Quick Sort algorithm marked a critical improvement, demanding a meticulous balance between algorithmic efficiency and code readability. The iterative testing and refinement process provided valuable insights into optimizing speed while maintaining clear and understandable code. Strategically placed debugging statements throughout the Quick Sort algorithm facilitated the identification and resolution of challenges, highlighting the importance of systematic troubleshooting. This experience deepened my understanding of algorithmic principles and honed my ability to navigate the complex landscape of algorithm implementation in real-world applications.</p>
 	<p><b>What I Learned as I Was Creating and Improving FitTrack</b></p>
