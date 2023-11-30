@@ -57,11 +57,11 @@ body {
 }
 
 .box-professional-assessment {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
+  margin-bottom: 15px; 
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
   background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .professional-assessment {
