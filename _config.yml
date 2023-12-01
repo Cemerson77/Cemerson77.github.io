@@ -1,6 +1,6 @@
 # Site settings
-title: ""
-description: ""
+title: Christine Emerson's Homepage
+description: Bookmark this to keep an eye on my project updates!
 
 # Jekyll settings
 theme: jekyll-theme-minimal
@@ -10,4 +10,4 @@ url: https://cemerson77.github.io/
 baseurl: ""
 
 # GitHub Pages settings
-repository: ""
+repository: cemerson77/cemerson77.github.io
