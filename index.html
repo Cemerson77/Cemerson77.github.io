@@ -219,6 +219,22 @@ title: Christine Emerson - Portfolio
       </div>
   </section>
   </div>
+
+  <script>
+    function toggleReadMore(sectionId) {
+      const content = document.getElementById(`${sectionId}-content`);
+      const toggleButton = document.querySelector(`.${sectionId}-toggle`);
+
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        toggleButton.textContent = 'Read Less';
+      } else {
+        content.style.display = 'none';
+        toggleButton.textContent = 'Read More';
+      }
+    }
+  </script>
+	
 </body>
 
 </html>
