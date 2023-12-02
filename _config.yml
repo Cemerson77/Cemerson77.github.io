@@ -3,7 +3,7 @@ title: ""
 description: ""
 
 # Jekyll settings
-theme: ""
+theme: jekyll-theme-minimal
 # URL settings
 URL: ""
 baseurl: ""
