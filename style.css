@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
@@ -28,7 +28,7 @@ body {
 }
 
 .photos {
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0 auto;
   margin-bottom: 15px; 
   margin-bottom: 15px; 
@@ -66,7 +66,7 @@ body {
 }
 
 .professional-assessments {
-  max-width: 800px;
+  max-width: 1500px;
   margin-bottom: 15px; 
   padding: 15px;
   border: 1px solid #e0e0e0;
@@ -77,13 +77,13 @@ body {
 }
 
 .projects {
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0 auto;
   width: 100%;
 }
 
 .project {
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0 auto;
   width: 100%;
   margin-bottom: 15px; 
@@ -113,7 +113,7 @@ body {
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 15px; /* Add some bottom margin for spacing */
+  margin-bottom: 15px; 
 }
 
 .contact-info a {
@@ -195,7 +195,7 @@ a:hover {
 }
 
 .navbar a:hover {
-  background-color: #ddd; /* Choose your hover background color */
+  background-color: #ddd; 
   color: black;
 }
 
@@ -204,7 +204,7 @@ a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff; /* Choose your button color */
+  background-color: #007bff; 
   color: #fff;
   border: none;
   border-radius: 5px;
