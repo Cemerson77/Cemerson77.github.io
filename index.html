@@ -213,8 +213,66 @@ title: Christine Emerson - Portfolio
 	<p><b>•	Enhancement: </b>Maintained Log.d for logging and introduced more specific exception handling, providing better insights into potential issues during database operations.</p>
 	<p>Collectively, these enhancements improve code robustness, address potential issues, and enhance resource management and logging for better overall maintainability.</p>
 
-      
-      
+
+	 <p><b>     DatabaseHelper.java Class:</b></p>
+	<p><b>1.    Indexed Username Column:</b></p>
+	<p><b>•	Enhancement: </b>An index was added to the username column for faster username-based queries.</p>
+	<p><b>•	Explanation: </b>Indexing the username column significantly improves the speed of operations involving username-based searches.</p>
+	<p><b>2.	Prepared Statement for Update:</b></p>
+	<p><b>•	Enhancement: </b>Used a prepared statement for the update operation in the addUserPhoneNumber method.</p>
+	<p><b>•	Explanation: </b>Prepared statements are more efficient and prevent SQL injection, contributing to code efficiency and security.</p>
+	<p><b>3.	Try-With-Resources for Cursors:</b></p>
+	<p><b>•	Enhancement: </b>Management of Cursor instances was done via try-with-resources.</p>
+	<p><b>•	Explanation: </b>Try-with-resources ensures cleaner and safer resource handling, automatically closing the cursor after the block finishes.</p>
+	<p>These modifications aim to optimize SQL queries, simplify code, and enhance database performance and data retrieval efficiency in the FitTrack Android application.</p>
+	<p><b>GoalWeightDatabaseHelper Class:</b></p>
+	<p>	The modifications made to the GoalWeightDatabaseHelper class aim to enhance the database by optimizing SQL queries for better performance and data retrieval efficiency. Key improvements include:</p>
+	<p><b>1.	Constructor and Database Name:</b></p>
+	<p><b>•	Original: </b>A separate static constant was used for the database name.</p>
+	<p><b>•	Modified: </b>Removed the separate constant, specifying the database name directly in the constructor for conciseness.</p>
+	<p><b>2.	Query Optimization in getMostRecentGoalWeightEntry and getAllGoalWeightEntries:</p>
+	<p><b>•	Original: </b>Used a standard query without try-with-resources.</b></p>
+	<p><b>•	Modified: </b>Utilized try-with-resources for automatic Cursor closing, improving resource management.</p>
+	<p><b>3.	Column Index Validation:</b></p>
+	<p><b>•	Original: </b>Accessed columns without explicit validation of column indices.</p>
+	<p><b>•	Modified: </b>Explicit validation for column indices was introduced, ensuring their validity before retrieving data.</p>
+	<p><b>4.	Minor Code Cleanup:</b></p>
+	<p><b>•	Original: </b>Used unnecessary @SuppressLint annotation.</p>
+	<p><b>•	Modified: </b>Removed the annotation and directly used validated column index for improved readability.</p>
+	<p>These modifications improve code readability, resource management, and code robustness by validating column indices before use.</p>
+	<p><b>Reflection on the Enhancement Process:</b></p>
+	<p>	The enhancement process was smooth, and no significant issues were encountered. The thoughtful consideration of the original code's shortcomings and the incorporation of best practices were integral to the modification process. Insights gained during the enhancements include:</p>
+	<p>•	The importance of index creation for optimizing query performance.</p>
+	<p>•	The significance of explicit validation for column indices.</p>
+	<p>•	The benefits of using try-with-resources for effective resource management.</p>
+	<p>Iterative dialogues with the instructor, initiated in Module One, played a crucial role in refining the enhancement plan and ensuring a seamless integration of improvements without compromising existing functionality.</p>
+	<p><b>Meeting Course Objectives:</b></p>
+	<p>The enhancements made align with the course objectives outlined in Module One, specifically in the following aspects:</p>
+	<p><b>1.	Outcome D:</b></p>
+	<p><b>•	Illustrated Skills: </b>The skills demonstrated are SQL database optimization, data modeling, and database performance improvement.</p>
+	<p><b>•	Artifact Impact: </b>The enhancements showcase proficiency in using innovative techniques and tools in computing practices to deliver value, as evidenced by the optimized SQL queries and improved database performance.</p>
+	<p><b>2.	Outcome E:</b></p>
+	<p><b>•	Illustrated Skills: </b>Development of a security mindset and ensuring privacy and enhanced security of data and resources.</p>
+	<p><b>•	Artifact Impact: </b>While not directly addressing security concerns, the enhancements contribute to overall code robustness and reliability, indirectly aligning to maintain data privacy and security.</p>
+	<p><b>What I Learned:</b></p>
+	<p>Enhancing and modifying the FitTrack SQLite Database provided valuable insights into various database management and software development aspects. Here's a deeper exploration of the key learnings:</p>
+	<p><b>1.	Optimizing Query Performance through Indexing:</b></p>
+	<p><b>•	Lesson: </b>The strategic creation of indexes is pivotal for optimizing query performance.</p>
+	<p><b>•	Insight: </b>I learned that introducing an index on the COLUMN_DATE in the WeightEntryDatabaseHelper class could significantly enhance the efficiency of date-based queries. This experience underscored the importance of understanding the specific data access patterns to make informed decisions on where to implement indexes.</p>
+	<p><b>2.	Validation for Code Robustness:</b></p>
+	<p><b>•	Lesson: </b>Explicit validation of column indices is crucial for code robustness.</p>
+	<p><b>•	Insight: </b>While working on cursor handling in the same class, I realized the potential risks associated with assuming the validity of column indices. By incorporating checks for valid indices, I enhanced the code's robustness and gained a deeper appreciation for defensive programming practices. This experience emphasized the importance of anticipating and addressing potential issues proactively.</p>
+	<p><b>3.	Effective Resource Management with try-with-resources:</b></p>
+	<p><b>•	Lesson: </b>Utilizing try-with-resources improves resource management.</p>
+	<p><b>•	Insight: </b>Introducing try-with-resources in various sections, particularly in the Cursor Closing enhancement, taught me about the cleaner and safer handling of resources. This practice contributes to more readable and concise code and ensures that resources like cursors are appropriately closed, reducing the risk of memory leaks. It reinforced the significance of adopting modern language features to enhance code quality and reliability.</p>
+	<p><b>4.	Iterative Refinement through Instructor Dialogues:</b></p>
+	<p><b>•	Lesson: </b>Iterative discussions with the instructor refine enhancement plans.</p>
+	<p><b>•	Insight: </b>As initiated in Module One, engaging in an ongoing dialogue with the instructor played a pivotal role in overcoming challenges and refining the enhancement plan. This iterative process improved the quality of the enhancements and highlighted the collaborative nature of software development. It underscored the importance of seeking feedback and continuously refining solutions for optimal outcomes.</p>
+	<p><b>5.	Balancing Optimization with Existing Functionality:</b></p>
+	<p><b>•	Lesson: </b>Balancing enhancements with existing functionality requires careful consideration.</p>
+	<p><b>•	Insight: </b>As I worked on refining the artifact, I encountered the challenge of ensuring that the introduced enhancements seamlessly integrated with the existing codebase. This process demanded a delicate balance between optimization and preserving the app's core functionality. It taught me the importance of thorough testing and validation to ensure that improvements do not inadvertently introduce new issues.</p>
+	<p>	The learning experience from enhancing the FitTrack SQLite Database went beyond technical skills. It encompassed a deeper understanding of the strategic decision-making involved in software optimization, the significance of robust coding practices, and the collaborative nature of refining solutions through ongoing dialogue and testing. These lessons contribute to the specific artifact and my broader growth as a proficient and mindful software developer.</p>
+
       </div>
       
     </section>
