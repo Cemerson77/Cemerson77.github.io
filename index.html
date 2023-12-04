@@ -307,21 +307,27 @@ layout: default
       const lightbox = document.createElement('div');
       lightbox.className = 'lightbox';
       lightbox.innerHTML = `
-        <span class="close">&times;</span>
-        <img src="${images[index].src}" alt="Photo ${index + 1}">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img src="${images[index].src}" alt="Photo ${index + 1}" onclick="nextImage()">
       `;
       document.body.appendChild(lightbox);
 
-      // Close the lightbox when the close button is clicked
-      const closeButton = lightbox.querySelector('.close');
-      closeButton.addEventListener('click', closeLightbox);
+      // Save the current index
+      currentIndex = index;
     }
 
     // Function to close the lightbox
-    function closeLightbox() {
+    window.closeLightbox = function () {
       const lightbox = document.querySelector('.lightbox');
       document.body.removeChild(lightbox);
-    }
+    };
+
+    // Function to navigate to the next image
+    window.nextImage = function () {
+      currentIndex = (currentIndex + 1) % images.length;
+      const lightboxImg = document.querySelector('.lightbox img');
+      lightboxImg.src = images[currentIndex].src;
+    };
 
     // Attach click event to each image in the gallery
     images.forEach((image, index) => {
