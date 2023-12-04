@@ -6,7 +6,7 @@ theme: jekyll-theme-minimal
 
 # URL settings
 url: ""
-baseurl: ""
+baseurl: "/cemerson77.github.io"
 
 # GitHub Pages settings
 repository: ""
