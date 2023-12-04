@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
@@ -28,7 +28,7 @@ body {
 }
 
 .photos {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 15px; 
   margin-bottom: 15px; 
@@ -66,7 +66,7 @@ body {
 }
 
 .professional-assessments {
-  max-width: 1200px;
+  max-width: 1000px;
   margin-bottom: 15px; 
   padding: 15px;
   border: 1px solid #e0e0e0;
@@ -77,13 +77,13 @@ body {
 }
 
 .projects {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   width: 100%;
 }
 
 .project {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   width: 100%;
   margin-bottom: 15px; 
