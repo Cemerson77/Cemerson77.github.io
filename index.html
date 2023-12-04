@@ -202,6 +202,19 @@ title: Christine Emerson - Portfolio
 	<p><b>1.	Index Creation:</b></p>
 	<p><b>•		Original Code: </b>Lacked explicit index creation for COLUMN_DATE. </p>
 	<p><b>•		Enhancement: </b>Enhancement: Introduced a new line of code to create an index on COLUMN_DATE, optimizing queries involving date-based sorting or filtering.</p>
+     	<p><b>2.	Cursor Handling:</b></p>
+	<p><b>•	Original Code:</b> Used @SuppressLint("Range") annotations without explicit checks for valid column indices.</p>
+	<p><b>•	Enhancement:</b> Checks have been added to ensure valid column indices, enhancing code robustness and preventing potential issues.</p>
+	<p><b>3.	Cursor Closing: </b> </p>
+	<p><b>•	Original Code: </b>Cursor.close() was used outside of a try-catch block.</p>
+	<p><b>•	Enhancement: </b>I added a try-with-resources statement to ensure cursors are adequately closed, improving resource management and reducing leak risk.</p>
+	<p><b>4.	Logging and Exception Handling:</b></p>
+	<p><b>•	Original Code: </b>Used Log.d for logging and caught general exceptions without specific handling.</p>
+	<p><b>•	Enhancement: </b>Maintained Log.d for logging and introduced more specific exception handling, providing better insights into potential issues during database operations.</p>
+	<p>Collectively, these enhancements improve code robustness, address potential issues, and enhance resource management and logging for better overall maintainability.</p>
+
+      
+      
       </div>
       
     </section>
