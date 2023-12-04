@@ -2,7 +2,8 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f8f9fa;
+  color: #333333;
 }
 
 .container {
@@ -10,84 +11,49 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .header {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .profile-photo {
   width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-right: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.photos {
-  margin-bottom: 15px; 
-}
-
-.photo-gallery {
-  margin-bottom: 15px; 
-  padding: 15px;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  background-color: #ffffff;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 15px;
-}
-
-.photo-gallery img {
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .header-text {
   flex: 1;
 }
 
-.about {
-  text-align: center;
-  /*margin-bottom: 15px; */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #007bff;
 }
 
-.professional-assessment {
+h2 {
+  font-size: 1.8em;
+  color: #6c757d;
 }
 
-.professional-assessments {
-  margin-bottom: 15px; 
-  padding: 15px;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  background-color: #ffffff;
-}
-
-.projects {
-}
-
-.project {
-  margin-bottom: 15px; 
-  padding: 15px;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  background-color: #ffffff;
-}
-
-h1, h2, h3 {
-  color: #333333;
+h3 {
+  font-size: 1.5em;
+  color: #007bff;
 }
 
 p {
-  color: #555555;
+  line-height: 1.6;
 }
 
 a {
-  color: #0366d6;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -95,10 +61,36 @@ a:hover {
   text-decoration: underline;
 }
 
+.container section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 iframe {
   width: 100%;
   height: 315px;
   border: none;
-  border-radius: 5px;
-  margin-bottom: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.read-more-toggle {
+  cursor: pointer;
+  color: #007bff;
 }
