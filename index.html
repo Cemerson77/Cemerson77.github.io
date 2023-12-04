@@ -295,6 +295,46 @@ layout: default
   </section>
   </div>
 
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const gallery = document.querySelector('.photo-gallery');
+    const images = gallery.querySelectorAll('img');
+    let currentIndex = 0;
+
+    // Function to show the lightbox
+    function openLightbox(index) {
+      const lightbox = document.createElement('div');
+      lightbox.className = 'lightbox';
+      lightbox.innerHTML = `
+        <span class="close">&times;</span>
+        <img src="${images[index].src}" alt="Photo ${index + 1}">
+      `;
+      document.body.appendChild(lightbox);
+
+      // Close the lightbox when the close button is clicked
+      const closeButton = lightbox.querySelector('.close');
+      closeButton.addEventListener('click', closeLightbox);
+    }
+
+    // Function to close the lightbox
+    function closeLightbox() {
+      const lightbox = document.querySelector('.lightbox');
+      document.body.removeChild(lightbox);
+    }
+
+    // Attach click event to each image in the gallery
+    images.forEach((image, index) => {
+      image.addEventListener('click', () => {
+        openLightbox(index);
+      });
+    });
+  });
+</script>
+
+
+
+	
   <div class="contact-section">
   	<h2>Contact Information</h2>
   <div class="contact-info">
