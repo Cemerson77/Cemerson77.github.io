@@ -96,6 +96,8 @@ a:hover {
 }
 
 iframe {
+  display: block;
+  margin: 0 auto;
   border: none;
   border-radius: 5px;
   margin-bottom: 15px;
