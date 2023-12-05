@@ -408,20 +408,20 @@ layout: default
     </div>
   </div>
 </div>
-   <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/Cemerson77/Cemerson77.github.io/b5c89be989433925252b3a2cd12ed081f75c40bc/style.css">
+  <script>
+    function toggleReadMore(sectionId) {
+  	const content = document.getElementById(`${sectionId}-content`);
+  	const toggleButton = document.querySelector(`.${sectionId}-toggle`);
 
-    <script>
-        function toggleReadMore(sectionId) {
-            const content = document.getElementById(`${sectionId}-content`);
-            const toggleButton = document.querySelector(`.${sectionId}-toggle`);
-
-            // Toggle the CSS class to show/hide content
-            content.classList.toggle('show-content');
-
-            toggleButton.textContent = content.classList.contains('show-content') ? 'Read Less' : 'Read More';
+  	if (content.style.display === 'none' || content.style.display === '') {
+    	    content.style.display = 'block';
+            toggleButton.textContent = 'Read Less';
+ 	} else {
+    	    content.style.display = 'none';
+            toggleButton.textContent = 'Read More';
         }
-    </script>
-
+    }
+  </script>
 
 <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
 
