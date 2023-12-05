@@ -109,7 +109,7 @@ layout: default
 		<h3 style="font-weight: bold;">Optimize SQL database queries and enhance database performance:</h3>
 		<p>&emsp;The optimization of SQL queries and improvement of database performance in the Database Optimization project exemplify my ability to use techniques and tools to enhance computing practices, aligning with industry-specific goals in database management. Employing strategies for optimizing database performance contributes to software solutions' overall efficiency and reliability.</p>
 		
-		<h3 style="font-weight: bold;">Incorporate user-centric security considerations:</h3>
+		<h3 style="font-weight: bold;">Incorporate user-centric security  vc xzconsiderations:</h3>
 		<p>&emsp;While not directly addressed, the security enhancements in FitTrack indirectly contribute to a security mindset by fortifying user accounts, mitigating potential risks, and indirectly aligning with ensuring privacy and enhanced security of data and resources. Prioritizing user-centric security considerations ensures the development of robust and trustworthy software solutions.</p>
 		
 		<h3 style="font-weight: bold;">Apply techniques for code modularization and documentation:</h3>
@@ -412,18 +412,21 @@ layout: default
   </div>
 </div>
   <script>
-    function toggleReadMore(sectionId) {
-      const content = document.getElementById(`${sectionId}-content`);
-      const toggleButton = document.querySelector(`.${sectionId}-toggle`);
+	function toggleReadMore(sectionId) {
+	  const content = document.getElementById(`${sectionId}-content`);
+	  const toggleButton = document.querySelector(`.${sectionId}-toggle`);
+	
+	  // Toggle a CSS class to show/hide content
+	  content.classList.toggle('show-content');
+	
+	  // Update button text based on the class
+	  if (content.classList.contains('show-content')) {
+	    toggleButton.textContent = 'Read Less';
+	  } else {
+	    toggleButton.textContent = 'Read More';
+	  }
+}
 
-      if (content.style.display === 'none' || content.style.display === '') {
-        content.style.display = 'block';
-        toggleButton.textContent = 'Read Less';
-      } else {
-        content.style.display = 'none';
-        toggleButton.textContent = 'Read More';
-      }
-    }
   </script>
 
 <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
