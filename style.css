@@ -212,6 +212,13 @@ a:hover {
   cursor: pointer;
 }
 
+.read-more-content {
+  display: none;
+}
+
+.show-content {
+  display: block;
+}
 
 
 iframe {
