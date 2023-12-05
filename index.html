@@ -57,8 +57,9 @@ layout: default
       <h2>Professional Self-Assessment</h2>
       <div class="professional-assessment">
 		<p>&emsp;As I reflect on my academic journey in the Computer Science program and the completion of my ePortfolio, I am proud of the growth and proficiency gained throughout the program, mainly through the enhancement of my Android app, FitTrack. This comprehensive experience has played a pivotal role in showcasing my strengths, shaping my professional goals and values, and preparing me for a successful entry into the computer science field as a software engineer.</p>
-	        <span id="dots-technology">...</span>
-	        <span id="more-technology">
+		
+		<div class="read-more-content" id="professional-assessment-content">
+
 		<h3 style="font-weight: bold;">Showcasing Strengths:</h3>
 		<p>&emsp;Completing coursework in the program has been instrumental in showcasing my strengths across various computer science domains. The hands-on projects, including the enhancement of FitTrack, allowed me to demonstrate proficiency in employing strategies for building collaborative environments, designing and evaluating computing solutions using algorithmic principles, and using well-founded and innovative techniques in software engineering, design, and database management.</p>
 		
@@ -115,10 +116,10 @@ layout: default
 		<p>&emsp;The Quick Sort Algorithm Implementation project demonstrates my ability to design and deliver professional-quality communications through clear and concise code comments, emphasizing the importance of effective documentation for collaborative coding environments. Well-documented code and modularization practices enhance code readability, maintainability, and collaborative development.</p>
 		
 		<p>&emsp;Extending my proficiency to include collaborative version control and consistently applying industry best practices, I have further enriched my skill set and demonstrated a holistic approach to software engineering. These extensions align with the overarching course outcomes, showcasing my ability to contribute effectively in collaborative, industry-specific, and security-conscious software development environments.</p>
-           </span>
-           <button class="read-more-btn" data-section-id="technology" id="myBtn-technology">Read more</button>
-       </div>
-   </section>
+	</div>
+		<p class="read-more-toggle" onclick="toggleReadMore('professional-assessment')">Read More</p>
+
+    </section>
 	  
     <section class="projects" id="projects">
       <h2>Projects</h2>
@@ -137,7 +138,7 @@ layout: default
         <p>  &emsp;FitTrack emerged as a comprehensive Android weight-tracking application coded in Java and XML in Android Studio, meticulously developed during the CS 360 Mobile Architect & Programming course, which concluded last term. Its inception was fueled by offering users a seamless platform to track their weight, set goals, and monitor their fitness journey.</p>
 	<p><b>Download the ZIP file for Enhancement One:</b> <a href="https://github.com/Cemerson77/CS-499-CS-CAPSTONE/blob/75efa75295613e133ec917230aef0db08be9c606/Enhancement_One_FitTrack.zip" target="_blank">Click here</a></p>
 
-	<span id="dots">...</span><span id="more">
+	<div class="read-more-content" id="project software-design-content">
 
 	<p><b>Justification of the Inclusion of FitTrack</b></p>
 	<p>  &emsp;The selection of FitTrack for my ePortfolio is rooted in its embodiment of diverse software development skills. It serves as a canvas illustrating my proficiency in various vital areas. Integrating bcrypt for password hashing reflects a commitment to security, ensuring user data is safeguarded against potential threats. Password strength validation, a feature that was not initially present, was introduced to enhance the application's robustness, encouraging users to adopt strong and secure passwords. Furthermore, the transition from hard-coded strings to string resources represents a step toward improved internationalization and easier maintenance. The crown jewel, however, is incorporating a settings page with a dark mode feature, enriching the user experience and aligning the app with modern design trends.</p>
@@ -173,7 +174,7 @@ layout: default
 	<p>  &emsp;The introduction of password strength validation in SignUpActivity presented another challenge, requiring careful consideration of the criteria for a secure password. It involved setting specific password length requirements and combining upper- and lower-case letters, numbers, and special characters. The challenge here was to balance creating stringent criteria for enhanced security and maintaining user-friendliness. The iterative refinement of these criteria and continuous testing allowed for the developing of a robust yet user-friendly password strength validation system.</p>
 	<p>  &emsp;Furthermore, aligning the UI design across the app demanded meticulous attention to detail. Achieving a consistent and engaging user interface required refining the layout, color schemes, and design elements. The challenge was to ensure that the transition to a modern and cohesive design did not compromise the application's usability. This process involved iterative testing and feedback gathering to make informed design decisions that resonated with the user base.</p>
       </div>
-	<button onclick="myFunction()" id="myBtn">Read more</button>
+	<p class="read-more-toggle" onclick="toggleReadMore('project software-design')">Read More</p>
 
       <div class="project algorithm-data-structures"  id="enhancement-two">
         <h3>Algorithm and Data Structures</h3>
@@ -181,7 +182,7 @@ layout: default
 	<p>&emsp;The artifact chosen for this artifact is FitTrack. FitTrack was developed as an extensive Android weight-tracking application written in Java and XML in Android Studio, meticulously developed throughout the CS 360 Mobile Architect & Programming course, which concluded in the previous term. Its creation was driven by providing users with a smooth platform for monitoring weight, setting goals, and overseeing their fitness progress. The artifact in question is associated with enhancement two, algorithms and data structure optimizing the data sorting algorithm within the FitTrack Android app. Initially employing a basic sorting algorithm, I enhanced its efficiency by implementing the Quick Sort algorithm. This improvement aimed to improve the app's overall performance in handling and presenting sorted data.</p>
 	<p><b>Download the ZIP file for Enhancement Two: </b><a href="https://github.com/Cemerson77/CS-499-CS-CAPSTONE/blob/75efa75295613e133ec917230aef0db08be9c606/Enhancement_Two_FitTrack.zip" target="_blank">Click here</a></p>
 
-	<span id="dots">...</span><span id="more">
+	<div class="read-more-content" id="project algorithm-data-structures-content">
 
 	<p><b>Justify the Inclusion of the Artifact in your ePortfolio</b>b</p>
 	<p>&emsp;Incorporating the FitTrack artifact into my ePortfolio is a strategic choice aligned with my ambition to excel as a software engineer. It symbolizes my commitment to mastering fundamental algorithms and data structures crucial for robust software development. By implementing the Quick Sort algorithm, FitTrack is a tangible representation of my ability to translate complex algorithmic principles into practical solutions. The artifact demonstrates technical prowess and underscores my dedication to effective communication through expanded comments and improved documentation. It is a reflective piece showcasing the challenges faced during implementation and the iterative refinement process. Furthermore, its direct alignment with course outcomes, encompassing algorithmic principles, computing techniques, and professional communication, solidifies its place as a comprehensive representation of my evolving capabilities in software engineering.</p>
@@ -233,7 +234,7 @@ layout: default
 	<p><b>Challenges Faced and How They Were Overcome</b></p>
 	<p>&emsp;The implementation process presented challenges, primarily centered around optimizing for speed while maintaining code readability. These challenges were overcome through iterative testing and the Quick Sort implementation refinement. Clear and concise comments were added to enhance readability, ensuring that the final algorithm met both efficiency and comprehensibility standards. The process underscored the delicate balance between algorithmic efficiency and code clarity, providing valuable insights into effective algorithm implementation in real-world applications. As a solution to these challenges, debugging statements were strategically placed throughout the Quick Sort algorithm to log the state of the list before and after sorting. This meticulous approach facilitated identifying and resolving any issues during the implementation.</p>
       </div>
-	<button onclick="myFunction()" id="myBtn">Read more</button>
+	<p class="read-more-toggle" onclick="toggleReadMore('project algorithm-data-structures')">Read More</p>
 
 	      
       <div class="project database" id="enhancement-three">
@@ -241,7 +242,7 @@ layout: default
         <p><b>Artifact Description</b></p>
 	<p>&emsp;The artifact chosen for enhancement in the databases category is the FitTrack, a critical component developed during the CS 360 course last term. This database plays a pivotal role in storing user information, weight records, and goal weights, facilitating efficient data retrieval and management for users of the FitTrack application.</p>
 	<p><b>Download the ZIP file for Enhancement Three:</b> <a href="https://github.com/Cemerson77/CS-499-CS-CAPSTONE/blob/75efa75295613e133ec917230aef0db08be9c606/Enhancement_Three_FitTrrack.zip" target="_blank">Click here</a></p>
-	<span id="dots">...</span><span id="more">
+	<div class="read-more-content" id="project database-content">
 	<p><b>Justification for Inclusion</b></p>
 	<p>&emsp;The decision to include the FitTrack SQLite Database in my ePortfolio is rooted in its significance in supporting the FitTrack application's functionality. The database showcases my SQL, data modeling, and performance improvement skills. The enhancements align with the overarching outcomes of the computer science program, specifically Outcome D, which emphasizes the ability to use innovative techniques, skills, and tools in computing practices. Furthermore, integrating data mining within the Android app demonstrates a commitment to Outcome E, developing a security mindset and ensuring data and resources' privacy and enhanced security.</p>
 	<p><b>Enhancements and Their Impact</b></p>
@@ -321,7 +322,7 @@ layout: default
 	<p>&emsp;	The learning experience from enhancing the FitTrack SQLite Database went beyond technical skills. It encompassed a deeper understanding of the strategic decision-making involved in software optimization, the significance of robust coding practices, and the collaborative nature of refining solutions through ongoing dialogue and testing. These lessons contribute to the specific artifact and my broader growth as a proficient and mindful software developer.</p>
 
       </div>
-	<button onclick="myFunction()" id="myBtn">Read more</button>
+      	<p class="read-more-toggle" onclick="toggleReadMore('project database')">Read More</p>
 
     </section>
 
@@ -407,35 +408,20 @@ layout: default
     </div>
   </div>
 </div>
+  <script>
+    function toggleReadMore(sectionId) {
+      const content = document.getElementById(`${sectionId}-content`);
+      const toggleButton = document.querySelector(`.${sectionId}-toggle`);
 
-<script>
-   function myFunction(sectionId) {
-      var dots = document.getElementById("dots-" + sectionId);
-      var moreText = document.getElementById("more-" + sectionId);
-      var btnText = document.getElementById("myBtn-" + sectionId);
-
-      if (dots.style.display === "none") {
-         dots.style.display = "inline";
-         btnText.innerHTML = "Read more";
-         moreText.style.display = "none";
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        toggleButton.textContent = 'Read Less';
       } else {
-         dots.style.display = "none";
-         btnText.innerHTML = "Read less";
-         moreText.style.display = "inline";
+        content.style.display = 'none';
+        toggleButton.textContent = 'Read More';
       }
-   }
-
-   document.addEventListener("DOMContentLoaded", function () {
-      // Attach click event listeners to all buttons with class "read-more-btn"
-      var buttons = document.querySelectorAll('.read-more-btn');
-      buttons.forEach(function (button) {
-         button.addEventListener('click', function () {
-            var sectionId = this.getAttribute('data-section-id');
-            myFunction(sectionId);
-         });
-      });
-   });
-</script>
+    }
+  </script>
 
 <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
 
