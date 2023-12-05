@@ -411,28 +411,32 @@ layout: default
   </div>
 </div>
 <script>
-  window.onload = function () {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
+   function myFunction(sectionId) {
+      var dots = document.getElementById("dots-" + sectionId);
+      var moreText = document.getElementById("more-" + sectionId);
+      var btnText = document.getElementById("myBtn-" + sectionId);
 
-    dots.style.display = "inline";
-    moreText.style.display = "none";
-
-    btnText.style.color = "blue"; // Set the button text color to blue
-
-    btnText.addEventListener("click", function () {
       if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "<span style='color: blue;'>Read more</span>"; // Read more text in blue
-        moreText.style.display = "none";
+         dots.style.display = "inline";
+         btnText.innerHTML = "Read more";
+         moreText.style.display = "none";
       } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "<span style='color: blue;'>Read less</span>"; // Read less text in blue
-        moreText.style.display = "inline";
+         dots.style.display = "none";
+         btnText.innerHTML = "Read less";
+         moreText.style.display = "inline";
       }
-    });
-  };
+   }
+
+   document.addEventListener("DOMContentLoaded", function () {
+      // Attach click event listeners to all buttons with class "read-more-btn"
+      var buttons = document.querySelectorAll('.read-more-btn');
+      buttons.forEach(function (button) {
+         button.addEventListener('click', function () {
+            var sectionId = this.getAttribute('data-section-id');
+            myFunction(sectionId);
+         });
+      });
+   });
 </script>
 
 <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
