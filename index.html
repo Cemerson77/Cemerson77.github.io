@@ -387,9 +387,6 @@ layout: default
   });
 </script>
 
-
-
-	
   <div class="contact-section" id="contact">
   	<h2>Contact Information</h2>
   <div class="contact-info">
@@ -411,19 +408,20 @@ layout: default
     </div>
   </div>
 </div>
-<script>
-  function toggleReadMore(sectionId) {
-    const content = document.getElementById(`${sectionId}-content`);
-    const toggleButton = document.querySelector(`.${sectionId}-toggle`);
+  <script>
+    function toggleReadMore(sectionId) {
+      const content = document.getElementById(`${sectionId}-content`);
+      const toggleButton = document.querySelector(`.${sectionId}-toggle`);
 
-    // Toggle a CSS class to show/hide content
-    content.classList.toggle('show-content');
-
-    // Update button text based on the class
-    toggleButton.textContent = content.classList.contains('show-content') ? 'Read Less' : 'Read More';
-  }
-</script>
-
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        toggleButton.textContent = 'Read Less';
+      } else {
+        content.style.display = 'none';
+        toggleButton.textContent = 'Read More';
+      }
+    }
+  </script>
 
 <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
 
