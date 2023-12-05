@@ -411,22 +411,19 @@ layout: default
     </div>
   </div>
 </div>
-  <script>
-	function toggleReadMore(sectionId) {
-	  const content = document.getElementById(`${sectionId}-content`);
-	  const toggleButton = document.querySelector(`.${sectionId}-toggle`);
-	
-	  // Toggle a CSS class to show/hide content
-	  content.classList.toggle('show-content');
-	
-	  // Update button text based on the class
-	  if (content.classList.contains('show-content')) {
-	    toggleButton.textContent = 'Read Less';
-	  } else {
-	    toggleButton.textContent = 'Read More';
-	  }
-	}
-  </script>
+<script>
+  function toggleReadMore(sectionId) {
+    const content = document.getElementById(`${sectionId}-content`);
+    const toggleButton = document.querySelector(`.${sectionId}-toggle`);
+
+    // Toggle a CSS class to show/hide content
+    content.classList.toggle('show-content');
+
+    // Update button text based on the class
+    toggleButton.textContent = content.classList.contains('show-content') ? 'Read Less' : 'Read More';
+  }
+</script>
+
 
 <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
 
