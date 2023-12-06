@@ -13,6 +13,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px
   display: flex; /* Use flexbox to align skills and content */
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
 
 }
 
@@ -224,14 +225,16 @@ a:hover {
 
 /*skills*/
 #skills {
-  float: left; /* Float the skills section to the left */
+  flex: 0 0 auto; /* Do not grow or shrink the skills section */
   width: 30%; /* Adjust the width as needed */
   margin-right: 20px; /* Add some right margin for spacing */
 }
 
 .skills-container {
+  flex: 1 1 auto; /* Allow the skills container to grow and shrink */
   width: 100%; /* Set the skills container to full width */
 }
+
 
 .skills-list {
   /* Add your specific styles for the skills list */
