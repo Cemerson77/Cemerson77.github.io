@@ -219,12 +219,6 @@ a:hover {
   display: none;
 }
 
-.more-toggle {
-  cursor: pointer;
-  color: blue; /* Change the color to blue */
-}
-
-
 .show-content {
   display: block;
 }
