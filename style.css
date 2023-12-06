@@ -12,6 +12,8 @@ body {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px
+  display: flex; /* Use flexbox to align skills and content */
+
 }
 
 .header {
@@ -222,22 +224,26 @@ a:hover {
 
 /*skills*/
 #skills {
-    float: left; /* Float the skills section to the left */
-    width: 30%; /* Adjust the width as needed */
-    margin-right: 20px; /* Add some right margin for spacing */
+  float: left; /* Float the skills section to the left */
+  width: 30%; /* Adjust the width as needed */
+  margin-right: 20px; /* Add some right margin for spacing */
+}
+
+.skills-container {
+  width: 100%; /* Set the skills container to full width */
 }
 
 .skills-list {
-    /* Add your specific styles for the skills list */
-    list-style-type: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
+  /* Add your specific styles for the skills list */
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
 }
 
 .skills-list li {
-    /* Add styles for individual skill items */
-    color: #333; /* Example: Set text color */
-    font-size: 16px; /* Example: Set font size */
-    margin-bottom: 10px; /* Add some bottom margin for spacing between skills */
+  /* Add styles for individual skill items */
+  color: #333; /* Example: Set text color */
+  font-size: 16px; /* Example: Set font size */
+  margin-bottom: 10px; /* Add some bottom margin for spacing between skills */
 }
 
 iframe {
