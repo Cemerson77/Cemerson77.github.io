@@ -455,7 +455,13 @@ layout: default
             myFunction(sectionId);
          });
       });
+   // Set initial HTML for all buttons with class "read-more-btn"
+   buttons.forEach(function (button) {
+      var sectionId = button.getAttribute('data-section-id');
+      var btnText = document.getElementById("myBtn-" + sectionId);
+      btnText.innerHTML = '<span style="color: blue;">Read more</span>';
    });
+});
 </script>
 
 
